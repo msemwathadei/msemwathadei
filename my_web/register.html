@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THADEI CLAUD MSEMWA</title>
+    <link rel="stylesheet" href="my_web.css">
+<script src="register.js"></script>
+
+</head>
+<body style="background-color: rgb(136, 241, 146);">
+    <header>
+        <nav class="top-navbar">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about_me.html">ABOUT ME</a></li>
+            <li><a href="register.html">REGISTER</a></li>
+            <li><a href="login.html">COURSES</a></li>
+            <li><a href="thadei_cv.pdf">CV</a></li>
+            <li><a href="contacts.html">CONTACTS</a></li>
+        </nav>
+       </header>
+    <h2>Sign up to see more contents</h2>
+    <p>Please fill this form to register</p>
+    <form id="register-form" onsubmit="return validateForm()" method="post" action="register.php"  enctype="multipart/form-data" >
+        <label>First name</label><br>
+        <input type="text" name="fname" id="fname" /><br>
+        <label>Middle name</label><br>
+        <input type="text" name="mname" id="mname" /><br>
+        <label>Surname</label><br>
+        <input type="text" name="surname" id="surname" /><br>
+        <label>username</label><br>
+        <input type="text" name="username" id="username" /><br>
+        <label>password</label><br>
+        <input type="password" name="password" id="password"  min="10" oninput="validatePassword"/><br>  
+        <label for="password_confirmation">Confirm Passord</label> 
+        <input type="password" name="Confirm_password" id="password_confirmation" placeholder=""> <br>    
+        <label>cv</label><br>
+        <input type="file" name="cv" id="cv" /><br>
+        <label>email</label><br>
+        <input type="email" name="email" id="email" placeholder="example@gmail.com" /><br>
+        <label>phone number</label><br>
+        <input type="text" name="mobile" id="mobile"  min="10"/><br>
+        <label>Facebook</label><br>
+        <input type="text" name="facebook" id="facebook" placeholder="facebook account" /><br>
+        <label>Twitter</label><br>
+        <input type="text" name="twitter" id="twitter" placeholder="twitter account" /><br>
+        <label>Instagram</label><br>
+        <input type="text" name="instagram" id="instagram" placeholder="instagram account"/><br>
+        <button type="reset" value="clear" id="clr">Clear</button>
+      <input type="submit" value="Register" style="padding-bottom: 0px; height: 40px; text-align: center;"><br>
+    </form><br><br> <br> <br>
+    <footer>All rights reserved @msemwathadei</footer>
+</body>
+</html>

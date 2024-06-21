@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THADEI CLAUD MSEMWA</title>
+    <link rel="stylesheet" href="my_web.css">
+    <script type="text/javascript" src="validation.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="top-navbar">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about_me.html">ABOUT ME</a></li>
+            <li><a href="register.html">REGISTER</a></li>
+            <li><a href="login.html">COURSES</a></li>
+            <li><a href="thadei_cv.pdf">CV</a></li>
+            <li><a href="contacts.html">CONTACTS</a></li>
+        </nav>
+       </header>
+    <h2>login</h2>
+    <p>login to see content in this page</p>
+    <form name="login_form"  action="login.php" method="post">
+        <input type="text" placeholder="username" name="username" id="username" required/><br>
+        <input type="password" placeholder="password" name="password" id="password" required/><br>
+        <input onclick="courseValidation()" type="submit" value="Login" name="login" id="login"/>
+    </form>
+   <p>Don't have an account</p>
+    <a href="register.html"><img src="sign-up.png" alt="sign" height="40" width="50"></a>
+    <footer>All rights reserved @msemwathadei</footer>
+</html>
